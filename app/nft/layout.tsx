@@ -18,15 +18,9 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={inter.className}>
-            <Image
-                        src={"/ntf-page-image.png"}
-                        width={1280}
-                        height={560}
-                        alt="NTF"
-                    />
-                <div className="flex justify-between items-center">
+                <div className="relative flex-col justify-center items-center">
                     {children}
-                    <div className="relative flex">
+                    <div className="absolute top-0 right-0">
                         <Countdown />
                     </div>
                 </div>
