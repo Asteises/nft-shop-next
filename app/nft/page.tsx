@@ -3,16 +3,15 @@ import Image from "next/image"
 export default function Page() {
     return (
         <>
-            <div className="bg-gray-800">
-                <Image
-                    src={"/ntf-page-image.png"}
-                    width={1280}
-                    height={560}
-                    alt="NTF"
-                />
-            </div>
             <div className="bg-gray-800 min-h-48 px-28 py-10">
-
+                <div className="bg-gray-800">
+                    <Image
+                        src={"/ntf-page-image.png"}
+                        width={1280}
+                        height={560}
+                        alt="NTF"
+                    />
+                </div>
                 <div className="text-5xl text-white mb-3">The Orbitians</div>
                 <div className="text-sm text-gray-500 mb-8">Minted on Sep 30, 2022</div>
                 <div className="text-xl text-gray-500 mb-3">Created By</div>

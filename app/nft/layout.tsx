@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { Inter } from "next/font/google";
+import Image from "next/image";
 import Countdown from "../countdown/page";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,12 +18,9 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={inter.className}>
-                <div className="relative flex-col justify-center items-center">
-                    {children}
-                    <div className="absolute top-0 right-0">
-                        <Countdown />
-                    </div>
-                </div>
+                
+                {children}
+                <Countdown />
             </body>
         </html>
     );
